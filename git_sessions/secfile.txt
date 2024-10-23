@@ -1,0 +1,12 @@
+Python  if else, for , range, while
+     SLICING , index ....
+      Data Structure 
+         tuple
+         list
+         set
+         dict  K:V
+user def functions.....
+RAM ---- primary storage area
+         electronic by nature
+         super fast
+         limited RAM 16 GB....32 GB
