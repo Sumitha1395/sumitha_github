@@ -1,0 +1,11 @@
+--Count of books by Author
+SELECT Author, COUNT(*) AS BookCount FROM BookCollection
+GROUP BY Author;
+
+--Members who have borrowed more than one book.
+SELECT MemberID, COUNT(*) AS BorrowCount FROM Borrow
+GROUP BY MemberID HAVING COUNT(*) > 1;
+
+--Minimum published year of books grouped by category
+SELECT Category, MIN(PublishedYear) AS MinPublishedYear FROM BookCollection
+GROUP BY Category HAVING MIN(PublishedYear) > 1900;
