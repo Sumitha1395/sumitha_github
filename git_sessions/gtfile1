@@ -1,0 +1,13 @@
+--Stock Availability by Product Category
+
+--How many orders there are for each status.
+
+-- Find products whose stock is below the average stock across all products.
+
+
+--Customers whose average order quantity is greater than 5.
+
+
+--Find products that have an average price above amount---5000(Price)
+
+--Customers who have placed their most recent order within the last month. with Most Recent Order
