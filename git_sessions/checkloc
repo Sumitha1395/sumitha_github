@@ -1,0 +1,9 @@
+--Authors whose books have never been borrowed.
+SELECT bc.Author FROM BookCollection bc
+LEFT JOIN Borrow b ON bc.BookID = b.BookID
+GROUP BY bc.Author HAVING COUNT(b.BorrowID) = 0;
+
+--Retrieve the titles of the second and third books with the most available copies from the BookCollection table
+SELECT Title, AvailableCopies FROM BookCollection
+ORDER BY AvailableCopies DESC
+OFFSET 1 ROWS FETCH NEXT 2 ROWS ONLY;
